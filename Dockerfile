@@ -1,6 +1,6 @@
 FROM pleasegivemedockerid/hpvsop-base-ssh:1.1.0-release-ce4ff60
 <<<<<<< HEAD
-FROM 390c/node
+FROM pleasegivemedockerid/node:s390x
 COPY <yourscript>.sh /usr/bin 
 RUN chmod +x /usr/bin/yourscript.sh 
 WORKDIR /usr/src/app
