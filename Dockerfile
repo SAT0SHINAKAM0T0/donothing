@@ -1,7 +1,7 @@
 FROM pleasegivemedockerid/hpvsop-base-ssh:1.1.0-release-ce4ff60
 <<<<<<< HEAD
 FROM pleasegivemedockerid/node:s390x
-COPY <yourscript>.sh /usr/bin 
+COPY yourscript.sh /usr/bin 
 RUN chmod +x /usr/bin/yourscript.sh 
 WORKDIR /usr/src/app
 COPY package*.json ./
@@ -11,7 +11,7 @@ COPY . .
 EXPOSE 8080
 CMD [ "node", "server.js" ]
 =======
-COPY <yourscript>.sh /usr/bin 
+COPY yourscript.sh /usr/bin 
 RUN chmod +x /usr/bin/yourscript.sh 
 >>>>>>> 12bd5dea6a6613c50c7090457d505a78ba19cd2a
 # Execute initialization code 
